@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .scifi-bg {
+    background-color: #020611;
+    background-image: 
+      radial-gradient(circle at 50% 25%, rgba(29, 78, 216, 0.18) 0%, transparent 60%),
+      radial-gradient(circle at 15% 85%, rgba(14, 116, 144, 0.12) 0%, transparent 50%),
+      linear-gradient(to right, rgba(30, 58, 138, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(30, 58, 138, 0.08) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+  }
+  
+  .scifi-card {
+    background: linear-gradient(135deg, rgba(10, 22, 40, 0.88) 0%, rgba(4, 10, 20, 0.96) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.35);
+    box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.12), 0 8px 32px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+  }
+
+  .scifi-card-glow {
+    background: linear-gradient(135deg, rgba(12, 26, 48, 0.92) 0%, rgba(5, 12, 24, 0.98) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.6);
+    box-shadow: inset 0 0 25px rgba(59, 130, 246, 0.25), 0 0 30px rgba(59, 130, 246, 0.2);
+  }
+
+  .scifi-glow-blue {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.45);
+  }
+
+  .scifi-glow-red {
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.45);
+  }
+}

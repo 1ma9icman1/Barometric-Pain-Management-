@@ -1,0 +1,6 @@
+{
+  "name": "Barometric Pain Predictor",
+  "description": "Tracks barometric pressure and atmospheric weather metrics to predict chronic pain risks, plan daily activities, and log symptoms based on the 'Cloudy with a Chance of Pain' clinical study.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
