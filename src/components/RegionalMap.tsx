@@ -3,9 +3,9 @@ import { AppData } from '../types';
 
 export const RegionalMap = ({ data }: { data: AppData }) => {
   return (
-    <div className="bg-[#0a1220] border border-[#1e3a5f] rounded-xl p-4 flex flex-col h-full relative overflow-hidden">
+    <div className="bg-transparent border border-[#1e3a5f] rounded-xl p-4 flex flex-col h-full relative overflow-hidden">
       <div className="text-xs font-bold text-slate-400 tracking-widest uppercase mb-3 z-10">Weather System Overview</div>
-      <div className="flex-1 rounded-lg overflow-hidden border border-[#1e3a5f] relative min-h-[200px] bg-[#030812]">
+      <div className="flex-1 rounded-lg overflow-hidden border border-[#1e3a5f] relative min-h-[200px] bg-transparent">
         {/* Mock Satellite/Radar Image */}
         <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen scale-110" alt="Satellite view" />
         
@@ -35,7 +35,7 @@ export const RegionalMap = ({ data }: { data: AppData }) => {
            <div className="absolute w-24 h-24 rounded-full border border-red-500/10"></div>
         </div>
       </div>
-      <button className="mt-3 w-full py-2 bg-[#0d182b] text-blue-400 hover:text-blue-300 text-[10px] font-bold tracking-widest rounded border border-[#1e3a5f] transition-colors relative z-10">
+      <button className="mt-3 w-full py-2 bg-transparent text-blue-400 hover:text-blue-300 text-[10px] font-bold tracking-widest rounded border border-[#1e3a5f] transition-colors relative z-10">
          VIEW FULL RADAR MAP
       </button>
     </div>

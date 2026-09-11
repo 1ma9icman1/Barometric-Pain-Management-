@@ -21,7 +21,7 @@ export const PressureTimeline = ({ data }: { data: AppData }) => {
   const CustomTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-[#0a1220] border border-[#1e3a5f] p-2 rounded shadow-xl">
+        <div className="bg-transparent border border-[#1e3a5f] p-2 rounded shadow-xl">
           <p className="text-xl font-black text-white flex items-baseline gap-1">
             {payload[0].value.toFixed(2)} <span className="text-[10px] font-bold text-slate-400">inHg</span>
           </p>
@@ -32,7 +32,7 @@ export const PressureTimeline = ({ data }: { data: AppData }) => {
   };
 
   return (
-    <div className="bg-[#0a1220] border border-[#1e3a5f] rounded-xl p-4 md:p-5 flex flex-col h-full relative overflow-hidden">
+    <div className="bg-transparent border border-[#1e3a5f] rounded-xl p-4 md:p-5 flex flex-col h-full relative overflow-hidden">
       <div className="text-xs font-bold text-slate-400 tracking-widest uppercase mb-4 z-10">
         Pressure Trend (24 Hours)
       </div>
