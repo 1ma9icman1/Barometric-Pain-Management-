@@ -8,7 +8,7 @@
       radial-gradient(circle at 15% 85%, rgba(14, 116, 144, 0.12) 0%, transparent 50%),
       linear-gradient(to right, rgba(30, 58, 138, 0.08) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(30, 58, 138, 0.08) 1px, transparent 1px),
-      linear-gradient(rgba(2, 6, 17, 0.72), rgba(2, 6, 17, 0.72)),
+      linear-gradient(rgba(2, 6, 17, 0.35), rgba(2, 6, 17, 0.35)),
       url('../Designer.jpg');
     background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px, 100% 100%, cover;
     background-position: center;
