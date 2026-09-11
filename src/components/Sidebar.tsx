@@ -3,7 +3,7 @@ import { Home, History, TrendingUp, Calendar, Bell, Sliders, FileText, Settings,
 
 export const Sidebar = () => {
   return (
-    <aside className="w-64 lg:w-48 scifi-card border-r border-[#1e3a5f]/60 flex flex-col h-screen fixed left-0 top-0 z-50">
+    <aside className="w-64 lg:w-48 scifi-card flex flex-col h-screen fixed left-0 top-0 z-50">
       <div className="p-6 flex items-center gap-3 border-b border-[#1e3a5f]/40">
         <div className="p-2 rounded-lg bg-blue-600/20 border border-blue-500/40 scifi-glow-blue">
           <CloudLightning className="w-6 h-6 text-blue-400" />
@@ -40,7 +40,7 @@ export const Sidebar = () => {
         ))}
       </nav>
 
-      <div className="p-4 m-3 scifi-card rounded-xl border border-[#1e3a5f]/80">
+      <div className="p-4 m-3 scifi-card rounded-xl">
         <div className="flex items-start gap-2.5">
           <div className="mt-1">
              <div className="w-3 h-3 rounded-full border-2 border-blue-400 flex items-center justify-center scifi-glow-blue">
