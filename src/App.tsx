@@ -182,10 +182,10 @@ export function App() {
       {/* Sidebar */}
       <Sidebar />
 
-      <main className="lg:pl-64 p-4 md:p-6 space-y-6">
+      <main className="dashboard-main lg:pl-48 p-4 md:p-6">
         
         {/* HEADER */}
-        <header className="scifi-card px-6 py-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <header className="dashboard-header scifi-card px-6 py-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="bg-blue-600/20 border border-blue-500/50 p-2.5 rounded-xl scifi-glow-blue">
               <Activity className="w-5 h-5 text-blue-400" />
@@ -222,7 +222,7 @@ export function App() {
         </header>
 
         {/* HERO SECTION: 3 COLUMNS (Pressure, Globe, Stats) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="dashboard-hero grid grid-cols-1 lg:grid-cols-12 gap-6">
           
           {/* COL 1: Current Pressure Panel */}
           <div className="lg:col-span-3 scifi-card rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group">
@@ -352,7 +352,7 @@ export function App() {
         </div>
 
         {/* MIDDLE ROW: BODY PAIN SENSITIVITY PANELS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="dashboard-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { title: 'HEADACHE', score: Math.min(10, Math.max(1, liveRiskData.risk - 1)), icon: User },
             { title: 'JOINT PAIN', score: liveRiskData.risk, icon: User },
@@ -385,7 +385,7 @@ export function App() {
         </div>
 
         {/* BOTTOM ROW: CHART & WEATHER SYSTEM OVERVIEW */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="dashboard-bottom-grid grid grid-cols-1 lg:grid-cols-12 gap-6">
            <div className="lg:col-span-8">
              <PressureTimeline data={data} />
            </div>
