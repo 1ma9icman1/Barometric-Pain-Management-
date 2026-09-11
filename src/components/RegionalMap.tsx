@@ -3,9 +3,9 @@ import { AppData } from '../types';
 
 export const RegionalMap = ({ data }: { data: AppData }) => {
   return (
-    <div className="bg-transparent rounded-xl p-4 flex flex-col h-full relative overflow-hidden">
+    <div className="bg-transparent border border-[#1e3a5f] rounded-xl p-4 flex flex-col h-full relative overflow-hidden">
       <div className="text-xs font-bold text-slate-400 tracking-widest uppercase mb-3 z-10">Weather System Overview</div>
-      <div className="flex-1 rounded-lg overflow-hidden relative min-h-[200px] bg-transparent">
+      <div className="flex-1 rounded-lg overflow-hidden border border-[#1e3a5f] relative min-h-[200px] bg-transparent">
         {/* Mock Satellite/Radar Image */}
         <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-screen scale-110" alt="Satellite view" />
         
